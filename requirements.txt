@@ -1,0 +1,4 @@
+flask
+python-dotenv
+Flask-pyoidc==3.7.0
+

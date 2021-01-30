@@ -1,0 +1,29 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - aplicação exemplo para App ID</title>
+        {% else %}
+        <title>microblog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Menu: &nbsp; &nbsp;
+            <a href="{{ url_for('index') }}">Home</a> &nbsp; &nbsp;
+            <a href="{{ url_for('login') }}">Login</a> &nbsp; &nbsp;
+            <a href="{{ url_for('protected') }}">Acesso controlado</a> &nbsp; &nbsp;
+            <a href="{{ url_for('logout') }}">Logout</a> &nbsp; &nbsp;
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>

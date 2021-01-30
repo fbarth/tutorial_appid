@@ -22,7 +22,7 @@ Este exemplo assume:
 
 ## Usei Flask-pyoidc
 
-A extensão de Flask para autenticação com o protocolo OpenIS que eu utilizei foi a Flask-pyoidc. Por que? Porque foi a que funcionou! E a que pareceu mais simples ;) 
+A extensão de Flask para autenticação com o protocolo OpenIS que eu utilizei foi a [Flask-pyoidc](https://pypi.org/project/Flask-pyoidc/). Por que? Porque foi a que funcionou! E a que pareceu mais simples ;) 
 
 ## Dúvidas
 

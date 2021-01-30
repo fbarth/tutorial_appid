@@ -23,4 +23,6 @@ export REDIRECT_URI=
 
 Os valores para estas variáveis são obtidos no serviço App ID, na aba de credenciais. Nesta aba você irá ver variáveis com exatamente estes nomes. É só copiar e colar para o arquivo `run_example.sh`. 
 
+![credenciais](images/credenciais.png)
+
 Para inicializar o servidor execute `./run.sh`. A qualquer momento você pode sair do `venv` digitando `deactivate`. E voltar a usar o ambiente virtual com `source venv/bin/activate`. 
